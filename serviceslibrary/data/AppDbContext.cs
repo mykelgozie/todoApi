@@ -17,6 +17,40 @@ namespace serviceslibrary.data
 
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Tasks>().HasData(
+
+                new Tasks
+                {
+                    Id = 1,
+                    Title = "Code",
+                    Description = "open visual studio",
+                    DueDate = DateTime.Now,
+                    StatusId = 1,
+                    CartegoryId = 1
+                }
+                );
+
+            modelBuilder.Entity<Cartegory>().HasData(
+                new Cartegory
+                {
+                    Id = 1,
+                    Name = "Completed",
+                }
+
+                );
+
+            modelBuilder.Entity<Status>().HasData(
+                new Status
+                {
+                    Id = 1,
+                    Name = "Completed",
+                }
+                );
+
+        }
+
 
 
         public DbSet<Tasks> Tasks { get; set; }

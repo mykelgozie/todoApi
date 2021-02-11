@@ -9,8 +9,8 @@ using serviceslibrary.data;
 namespace serviceslibrary.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210211203016_initial")]
-    partial class initial
+    [Migration("20210211211521_First Setup")]
+    partial class FirstSetup
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,6 +30,13 @@ namespace serviceslibrary.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Cartegories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Completed"
+                        });
                 });
 
             modelBuilder.Entity("Modelslibrary.Status", b =>
@@ -44,6 +51,13 @@ namespace serviceslibrary.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Status");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Completed"
+                        });
                 });
 
             modelBuilder.Entity("Modelslibrary.Tasks", b =>
@@ -74,6 +88,17 @@ namespace serviceslibrary.Migrations
                     b.HasIndex("StatusId");
 
                     b.ToTable("Tasks");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CartegoryId = 1,
+                            Description = "open visual studio",
+                            DueDate = new DateTime(2021, 2, 11, 22, 15, 21, 425, DateTimeKind.Local).AddTicks(9597),
+                            StatusId = 1,
+                            Title = "Code"
+                        });
                 });
 
             modelBuilder.Entity("Modelslibrary.Tasks", b =>

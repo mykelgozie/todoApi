@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace serviceslibrary.Migrations
 {
-    public partial class initial : Migration
+    public partial class FirstSetup : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -61,6 +61,21 @@ namespace serviceslibrary.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Cartegories",
+                columns: new[] { "Id", "Name" },
+                values: new object[] { 1, "Completed" });
+
+            migrationBuilder.InsertData(
+                table: "Status",
+                columns: new[] { "Id", "Name" },
+                values: new object[] { 1, "Completed" });
+
+            migrationBuilder.InsertData(
+                table: "Tasks",
+                columns: new[] { "Id", "CartegoryId", "Description", "DueDate", "StatusId", "Title" },
+                values: new object[] { 1, 1, "open visual studio", new DateTime(2021, 2, 11, 22, 15, 21, 425, DateTimeKind.Local).AddTicks(9597), 1, "Code" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tasks_CartegoryId",

@@ -33,6 +33,8 @@ namespace sampleTodo
             services.AddDbContext<AppDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DbConn")));
             services.AddControllers();
             services.AddScoped<ITaskRepository, TaskRepository>();
+            services.AddScoped<IStatusRepository, StatusRepository>();
+            services.AddScoped<ICartegoryRepository, CartegoryRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "sampleTodo", Version = "v1" });

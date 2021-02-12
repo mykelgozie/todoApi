@@ -17,6 +17,12 @@ namespace serviceslibrary.data
 
         }
 
+
+
+        public DbSet<Tasks> Tasks { get; set; }
+        public DbSet<Status> Status { get; set; }
+        public DbSet<Cartegory> Cartegories { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Tasks>().HasData(
@@ -53,9 +59,6 @@ namespace serviceslibrary.data
 
 
 
-        public DbSet<Tasks> Tasks { get; set; }
-        public DbSet<Status> Status { get; set; }
-        public DbSet<Cartegory> Cartegories { get; set; }
 
 
 

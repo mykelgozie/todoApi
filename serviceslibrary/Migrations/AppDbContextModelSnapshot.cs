@@ -93,7 +93,7 @@ namespace serviceslibrary.Migrations
                             Id = 1,
                             CartegoryId = 1,
                             Description = "open visual studio",
-                            DueDate = new DateTime(2021, 2, 11, 22, 15, 21, 425, DateTimeKind.Local).AddTicks(9597),
+                            DueDate = new DateTime(2021, 2, 12, 3, 4, 15, 937, DateTimeKind.Local).AddTicks(5454),
                             StatusId = 1,
                             Title = "Code"
                         });

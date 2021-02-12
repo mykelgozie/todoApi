@@ -9,8 +9,8 @@ using serviceslibrary.data;
 namespace serviceslibrary.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210211211521_First Setup")]
-    partial class FirstSetup
+    [Migration("20210212020416_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -95,7 +95,7 @@ namespace serviceslibrary.Migrations
                             Id = 1,
                             CartegoryId = 1,
                             Description = "open visual studio",
-                            DueDate = new DateTime(2021, 2, 11, 22, 15, 21, 425, DateTimeKind.Local).AddTicks(9597),
+                            DueDate = new DateTime(2021, 2, 12, 3, 4, 15, 937, DateTimeKind.Local).AddTicks(5454),
                             StatusId = 1,
                             Title = "Code"
                         });

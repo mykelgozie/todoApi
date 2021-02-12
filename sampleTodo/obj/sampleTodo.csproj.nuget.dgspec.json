@@ -4,6 +4,60 @@
     "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\sampleTodo\\sampleTodo.csproj": {}
   },
   "projects": {
+    "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\Dtos\\Dtos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\Dtos\\Dtos.csproj",
+        "projectName": "Dtos",
+        "projectPath": "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\Dtos\\Dtos.csproj",
+        "packagesPath": "C:\\Users\\MICHAEL NWOSU C\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\Dtos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MICHAEL NWOSU C\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "netcoreapp5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "netcoreapp5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\Modelslibrary\\Modelslibrary.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -82,6 +136,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\Dtos\\Dtos.csproj": {
+                "projectPath": "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\Dtos\\Dtos.csproj"
+              },
               "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\serviceslibrary\\serviceslibrary.csproj": {
                 "projectPath": "C:\\Users\\MICHAEL NWOSU C\\source\\repos\\Task\\serviceslibrary\\serviceslibrary.csproj"
               }
@@ -98,6 +155,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -117,6 +178,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sampleTodo", "sampleTodo.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "serviceslibrary", "..\serviceslibrary\serviceslibrary.csproj", "{338552FA-49C3-49AD-9BC0-A7C03C1BA6FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelslibrary", "..\Modelslibrary\Modelslibrary.csproj", "{5733D286-7B82-4109-80AB-48E7429AAD98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modelslibrary", "..\Modelslibrary\Modelslibrary.csproj", "{5733D286-7B82-4109-80AB-48E7429AAD98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dtos", "..\Dtos\Dtos.csproj", "{AFEF96E7-6363-412A-84BE-F5C5F40EFE6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5733D286-7B82-4109-80AB-48E7429AAD98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5733D286-7B82-4109-80AB-48E7429AAD98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5733D286-7B82-4109-80AB-48E7429AAD98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFEF96E7-6363-412A-84BE-F5C5F40EFE6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFEF96E7-6363-412A-84BE-F5C5F40EFE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFEF96E7-6363-412A-84BE-F5C5F40EFE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFEF96E7-6363-412A-84BE-F5C5F40EFE6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

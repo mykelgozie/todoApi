@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace serviceslibrary.Migrations
 {
-    public partial class FirstSetup : Migration
+    public partial class first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -75,7 +75,7 @@ namespace serviceslibrary.Migrations
             migrationBuilder.InsertData(
                 table: "Tasks",
                 columns: new[] { "Id", "CartegoryId", "Description", "DueDate", "StatusId", "Title" },
-                values: new object[] { 1, 1, "open visual studio", new DateTime(2021, 2, 11, 22, 15, 21, 425, DateTimeKind.Local).AddTicks(9597), 1, "Code" });
+                values: new object[] { 1, 1, "open visual studio", new DateTime(2021, 2, 12, 3, 4, 15, 937, DateTimeKind.Local).AddTicks(5454), 1, "Code" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tasks_CartegoryId",

@@ -9,3 +9,15 @@ C:\Users\MICHAEL NWOSU C\source\repos\Project\Modelslibrary\obj\Debug\net5.0\Mod
 C:\Users\MICHAEL NWOSU C\source\repos\Project\Modelslibrary\obj\Debug\net5.0\Modelslibrary.dll
 C:\Users\MICHAEL NWOSU C\source\repos\Project\Modelslibrary\obj\Debug\net5.0\ref\Modelslibrary.dll
 C:\Users\MICHAEL NWOSU C\source\repos\Project\Modelslibrary\obj\Debug\net5.0\Modelslibrary.pdb
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\bin\Debug\net5.0\Modelslibrary.deps.json
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\bin\Debug\net5.0\Modelslibrary.dll
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\bin\Debug\net5.0\ref\Modelslibrary.dll
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\bin\Debug\net5.0\Modelslibrary.pdb
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\obj\Debug\net5.0\Modelslibrary.csprojAssemblyReference.cache
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\obj\Debug\net5.0\Modelslibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\obj\Debug\net5.0\Modelslibrary.AssemblyInfoInputs.cache
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\obj\Debug\net5.0\Modelslibrary.AssemblyInfo.cs
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\obj\Debug\net5.0\Modelslibrary.csproj.CoreCompileInputs.cache
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\obj\Debug\net5.0\Modelslibrary.dll
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\obj\Debug\net5.0\ref\Modelslibrary.dll
+C:\Users\MICHAEL NWOSU C\source\repos\Task\Modelslibrary\obj\Debug\net5.0\Modelslibrary.pdb

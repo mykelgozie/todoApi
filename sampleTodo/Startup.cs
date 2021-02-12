@@ -8,6 +8,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using serviceslibrary.data;
+using serviceslibrary.Interfaces;
+using serviceslibrary.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,12 +29,15 @@ namespace sampleTodo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddDbContext<AppDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DbConn")));
             services.AddControllers();
+            services.AddScoped<ITaskRepository, TaskRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "sampleTodo", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

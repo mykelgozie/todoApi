@@ -51,8 +51,10 @@ namespace sampleTodo
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "sampleTodo v1"));
             }
+            app.UseCors(cors => cors.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseRouting();
+            
 
             app.UseAuthorization();
 
@@ -60,6 +62,7 @@ namespace sampleTodo
             {
                 endpoints.MapControllers();
             });
+         
         }
     }
 }

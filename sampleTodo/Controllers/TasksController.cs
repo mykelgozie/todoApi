@@ -49,6 +49,8 @@ namespace sampleTodo.Controllers
         }
 
 
+
+
         [HttpPost]
         public IActionResult AddTask(AddTaskDto task)
         {
@@ -62,6 +64,25 @@ namespace sampleTodo.Controllers
             return Created("Task created", task);
 
 
+
+        }
+
+        [HttpDelete("{id}")]
+
+        public async Task<IActionResult> DeleteTaskAsync(int id)
+        {
+            var task = await _task.FindTask(id);
+            if (task != null)
+            {
+
+                await _task.DeleteTaskAsync(id);
+                return Ok(new { message = "Task deleted" });
+
+            }
+
+            return BadRequest();
+
+          
 
         }
     }
